@@ -1,0 +1,127 @@
+{
+  "component": {
+    "id": "AWsmd30e535LhIDkB5XO",
+    "key": "com.ericsson.oss.services:topologySearchService",
+    "name": "Topology Search Service",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "last_commit_date",
+        "value": "1561367175000"
+      },
+      {
+        "metric": "new_technical_debt",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ]
+      },
+      {
+        "metric": "uncovered_conditions",
+        "value": "311",
+        "bestValue": false
+      },
+      {
+        "metric": "test_execution_time",
+        "value": "131"
+      },
+      {
+        "metric": "sqale_debt_ratio",
+        "value": "0.3",
+        "bestValue": false
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "key": "test_execution_time",
+      "name": "Unit Test Duration",
+      "description": "Execution duration of unit tests",
+      "domain": "Coverage",
+      "type": "MILLISEC",
+      "higherValuesAreBetter": false,
+      "qualitative": false,
+      "hidden": false,
+      "custom": false
+    },
+    {
+      "key": "uncovered_conditions",
+      "name": "Uncovered Conditions",
+      "description": "Uncovered conditions",
+      "domain": "Coverage",
+      "type": "INT",
+      "higherValuesAreBetter": false,
+      "qualitative": false,
+      "hidden": false,
+      "custom": false,
+      "bestValue": "0"
+    },
+    {
+      "key": "class_complexity",
+      "name": "Complexity / Class",
+      "description": "Complexity average by class",
+      "domain": "Complexity",
+      "type": "FLOAT",
+      "higherValuesAreBetter": false,
+      "qualitative": true,
+      "hidden": true,
+      "custom": false,
+      "decimalScale": 1
+    },
+    {
+      "key": "new_technical_debt",
+      "name": "Added Technical Debt",
+      "description": "Added technical debt",
+      "domain": "Maintainability",
+      "type": "WORK_DUR",
+      "higherValuesAreBetter": false,
+      "qualitative": true,
+      "hidden": false,
+      "custom": false,
+      "bestValue": "0"
+    },
+    {
+      "key": "sqale_debt_ratio",
+      "name": "Technical Debt Ratio",
+      "description": "Ratio of the actual technical debt compared to the estimated cost to develop the whole source code from scratch",
+      "domain": "Maintainability",
+      "type": "PERCENT",
+      "higherValuesAreBetter": false,
+      "qualitative": true,
+      "hidden": false,
+      "custom": false,
+      "decimalScale": 1,
+      "bestValue": "0.0",
+      "worstValue": "100.0"
+    },
+    {
+      "key": "last_commit_date",
+      "name": "Date of Last Commit",
+      "domain": "SCM",
+      "type": "MILLISEC",
+      "qualitative": false,
+      "hidden": true,
+      "custom": false
+    },
+    {
+      "key": "maintainability_rating_effort",
+      "name": "Total number of projects having worst maintainability rating",
+      "domain": "Maintainability",
+      "type": "DATA",
+      "qualitative": false,
+      "hidden": true,
+      "custom": false
+    }
+  ],
+  "periods": [
+    {
+      "index": 1,
+      "mode": "previous_version",
+      "date": "2019-06-21T10:08:32+0000",
+      "parameter": "1.80.11"
+    }
+  ]
+}
